@@ -1,0 +1,6 @@
+/.idea/
+/docker/mongo/mongo.values.js
+/docker/node/node.values.js
+/docker/docker-compose.yml
+/skyflow/
+/node_modules/

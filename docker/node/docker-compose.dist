@@ -1,0 +1,11 @@
+    {{ container_name }}:
+        container_name: {{ container_name }}
+        build: ./node
+        image: skyflow/node
+        restart: 'on-failure'
+        volumes:
+            - ../app.js:/node/app.js
+        ports:
+            - {{ port }}:80
+        environment:
+            - GRAPHQL_ENV={{ env }}
